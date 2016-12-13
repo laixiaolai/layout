@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <title>flexbox全兼容模板</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale = 1.0,shrink-to-fit=no,minimal-ui,">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/flex-style.css">
+    </head>
+    <body>
+        <!-- 1.用flex做提示icon -->
+        <h3 style="margin:0">1.用flex做提示icon</h3>
+        <div class="flex-cont flex-info">
+            <i class="f-icon"></i>
+            <div class="flex-item s-word">
+                <p class="s-desc">Description,xxx</p>
+                <p class="s-desc">test,test,test,test,test,test,test，test.hitest,test,test,test,</p>
+                <p class="s-desc">test,test,test,test,test,test,test</p>
+            </div>
+        </div>
+        <div class="flex-cont flex-info flex-info-center">
+            <i class="f-icon"></i>
+            <div class="flex-item s-word">
+                <p class="s-desc">Description,xxx</p>
+                <p class="s-desc">test,test,test,test,test,test,test，test.hitest,test,test,test,</p>
+                <p class="s-desc">test,test,test,test,test,test,test</p>
+            </div>
+        </div>
+
+        <!-- 2.用flex做列表元素 -->
+        <h3 style="margin:0">2.用flex做列表元素</h3>
+        <ul>
+            <li>
+                <div class="flex-cont flex-simple">
+                    <div class="s-img"></div>
+                    <div class="flex-item s-word">
+                        <p class="s-tit">title</p>
+                        <p class="s-desc">description</p>
+                    </div>
+                    <i class="f-icon"></i>
+                </div>
+            </li>
+            <li>
+                <div class="flex-cont flex-simple">
+                    <div class="s-img"></div>
+                    <div class="flex-item s-word">
+                        <p class="s-tit">title</p>
+                    </div>
+                    <i class="f-icon"></i>
+                </div>
+            </li>
+            <li>
+                <div class="flex-cont flex-simple">
+                    <div class="flex-item s-word">
+                        <p class="s-tit">title</p>
+                        <p class="s-desc">description</p>
+                    </div>
+                    <i class="f-icon"></i>
+                </div>
+            </li>
+        </ul>
+        <h3>3.用flex做tab</h3>
+        <ul role="tablist" class="flex-cont flex-tab">
+                <li class="current">
+                    <a href="javascript:void(0)" role="tab">
+                        <span class="tab-title">title</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" role="tab">
+                        <span class="tab-title">title</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" role="tab">
+                        <span class="tab-title">long title</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" role="tab">
+                        <span class="tab-title">title</span>
+                    </a>
+                </li>
+        </ul>
+        <ul role="tablist" class="flex-cont flex-tab">
+                <li>
+                    <a href="javascript:void(0)" role="tab">
+                        <span class="tab-title">long title</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" role="tab">
+                        <span class="tab-title">title</span>
+                    </a>
+                </li>
+        </ul>
+        <h3>4.用flex做导航(只适合三个布局)</h3>
+        <div class="flex-cont flex-nav">
+            <button class="f-btn">btn</button>
+        <div class="nav-title">
+            <h2>The big title</h2>
+            <p>infomation</p>
+        </div>            
+            <button class="f-btn">btn</button>
+        </div> 
+        <h3>5.用flex做搜索条</h3>
+        <div class="flex-cont flex-search">
+            <span>Search</span>
+            <div class="input"><input type="text"></div>
+            <button class="f-btn">btn</button>
+        </div>
+        <div class="flex-cont flex-search">
+            <div class="input"><input type="text"></div>
+            <button class="f-btn">btn</button>
+        </div>
+        <div class="flex-cont flex-search">
+            <i class="f-icon"></i>
+            <div class="input"><input type="text"></div>
+            <button class="f-btn">btn</button>
+        </div>
+
+        <h3>6.用flex做垂直居中(单/多)</h3>
+        <div class="flex-cont flex-centerbox">
+            <div class="center-cont">
+                <h2>Title</h2>
+                <p>infomation </p>
+                <p>infomation </p>
+                <button class="f-btn">btn</button>
+            </div>
+        </div>
+        <div class="flex-cont flex-centerbox">
+            <div class="center-cont">
+                <h2>Title</h2>
+                <p>infomation </p>
+                <p>infomation </p>
+                <button class="f-btn">btn</button>
+            </div>
+            <div class="center-cont">
+                <h2>Title</h2>
+                <p>infomation </p>
+                <p>infomation </p>
+                <button class="f-btn">btn</button>
+            </div>
+        </div>
+       
+
+        <h3>7.用flex做垂直弹性布局</h3>
+        <div class="page">
+            <div class="flex-cont flex-ver">
+                <div class="nav-box">
+                    title
+                </div>
+                <div class=" flex-item cont-box">
+                    content<br>content<br>content<br>content<br>content<br>content<br>content<br>content<br>content<br>content<br>content<br>content<br>
+                    content<br>content<br>content<br>content<br>content<br>content<br>content<br>content<br>content<br>content<br>content<br>content<br>
+                </div>
+                <div class="btn-box">
+                   <button class="f-btn">btn</button> 
+                </div>
+            </div>
+        </div>
+    
+
+
+<audio controls="controls" style="display: none;"></audio></body><style type="text/css">#yddContainer{display:block;font-family:Microsoft YaHei;position:relative;width:100%;height:100%;top:-4px;left:-4px;font-size:12px;border:1px solid}#yddTop{display:block;height:22px}#yddTopBorderlr{display:block;position:static;height:17px;padding:2px 28px;line-height:17px;font-size:12px;color:#5079bb;font-weight:bold;border-style:none solid;border-width:1px}#yddTopBorderlr .ydd-sp{position:absolute;top:2px;height:0;overflow:hidden}.ydd-icon{left:5px;width:17px;padding:0px 0px 0px 0px;padding-top:17px;background-position:-16px -44px}.ydd-close{right:5px;width:16px;padding-top:16px;background-position:left -44px}#yddKeyTitle{float:left;text-decoration:none}#yddMiddle{display:block;margin-bottom:10px}.ydd-tabs{display:block;margin:5px 0;padding:0 5px;height:18px;border-bottom:1px solid}.ydd-tab{display:block;float:left;height:18px;margin:0 5px -1px 0;padding:0 4px;line-height:18px;border:1px solid;border-bottom:none}.ydd-trans-container{display:block;line-height:160%}.ydd-trans-container a{text-decoration:none;}#yddBottom{position:absolute;bottom:0;left:0;width:100%;height:22px;line-height:22px;overflow:hidden;background-position:left -22px}.ydd-padding010{padding:0 10px}#yddWrapper{color:#252525;z-index:10001;background:url(chrome-extension://eopjamdnofihpioajgfdikhhbobonhbb/ab20.png);}#yddContainer{background:#fff;border-color:#4b7598}#yddTopBorderlr{border-color:#f0f8fc}#yddWrapper .ydd-sp{background-image:url(chrome-extension://eopjamdnofihpioajgfdikhhbobonhbb/ydd-sprite.png)}#yddWrapper a,#yddWrapper a:hover,#yddWrapper a:visited{color:#50799b}#yddWrapper .ydd-tabs{color:#959595}.ydd-tabs,.ydd-tab{background:#fff;border-color:#d5e7f3}#yddBottom{color:#363636}#yddWrapper{min-width:250px;max-width:400px;}</style></html>
